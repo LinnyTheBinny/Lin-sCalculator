@@ -349,7 +349,7 @@ def InsertStringToText(StringValue : str):
         else:
             if CurrentAnswerText == "" and StringValue == ".": CurrentAnswerText = "0" # For pressing . after operator
 
-            if NumberTwo: 
+            if NumberTwo and not AwaitingNumber: 
                 ResetVariables()
                 CurrentAnswerText = ""
 

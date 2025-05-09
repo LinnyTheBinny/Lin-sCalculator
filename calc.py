@@ -430,7 +430,7 @@ while True:
         if event.type == pygame.KEYDOWN:
             if event.unicode.isdigit():
                 InsertStringToText(str(event.unicode))
-            if event.key == pygame.K_RETURN: # Equals
+            if event.key == pygame.K_RETURN or event.unicode == "=": # Equals
                 InsertStringToText("=")
             if event.key == pygame.K_DELETE or event.key == pygame.K_BACKSPACE: # Delete
                 InsertStringToText("DEL")
